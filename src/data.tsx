@@ -1,3 +1,9 @@
+import netflixCloneImg from "./img/Netflix-clone.gif"
+import linkedinImg from "./img/linkedin.png"
+import twitterImg from "./img/twitter.png"
+import gitImg from "./img/git.png"
+import whatsappImg from "./img/whatsapp.png"
+
 export interface project {
   title: string;
   subtitle: string;
@@ -33,14 +39,14 @@ export const projects:project[]  = [
     subtitle: "VueJs-Firebase",
     description:
       "This project is a responsive clone of Netflix, is connected with firebase for login and register, and shows trailers from youtube as an iframe",
-    image: "public/assets/Netflix-clone.gif",
+    image: netflixCloneImg,
     link: "https://netflix-clone-3a020.web.app/",
   },
   {
     title: "Twitter-Clone React",
     subtitle: "React-Tailwind-Sanity",
     description:
-      "This project is a  responsive clone of twiter conect on the back with Sanity",
+      "This project is a responsive clone of twiter conect on the back with Sanity",
     image: "./project-2.gif",
     link: "https://reedbarger.com",
   },
@@ -49,22 +55,22 @@ export const projects:project[]  = [
 export const contactOptions:contactOptions[] = [
   {
     description: "linkedin",
-    image: "public/assets/linkedin.png",
+    image: linkedinImg,
     link: "https://www.linkedin.com/in/dianlobb",
   },
   {
     description: "twitter",
-    image: "public/assets/twitter.png",
+    image: twitterImg,
     link: "https://twitter.com/dianlobbTravel",
   },
   {
     description: "Git",
-    image: "public/assets/git.png",
+    image: gitImg,
     link: "https://github.com/dianlobb",
   },
   {
     description: "Whatsapp",
-    image: "public/assets/whatsapp.png",
+    image: whatsappImg,
     link: "https://api.whatsapp.com/send?phone=573058551887&text=%F0%9F%92%BC%20Hello%2C%20I%20saw%20your%20portfolio",
   },
   

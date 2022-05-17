@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import About from './components/About/About'
-import Contact from './components/Contact/contact'
-import Navbar from './components/Navbar/Navbar'
-import Projects from './components/Projects/Projects'
-import Skills from './components/Skills/Skills'
+import About from './components/About'
+import Contact from './components/contact'
+import Navbar from './components/Navbar'
+import Projects from './components/Projects'
+import Skills from './components/Skills'
 
 
 import './App.css'

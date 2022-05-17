@@ -1,5 +1,5 @@
 import React from "react";
-import { contactOptions } from "../../data";
+import { contactOptions } from "../data";
 interface formData {
   [key: string]: string
 }

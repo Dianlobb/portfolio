@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowCircleDownIcon } from "@heroicons/react/solid";
+import ProfileImg from "../img/Photo.jpg"
 
 export default function About() {
   return (
@@ -37,7 +38,7 @@ export default function About() {
               Contact Me
             </a>
             <a
-              href="public/assets/DianaLoboaCV.pdf"
+              href="./img/DianaLoboaCV.pdf"
               className="ml-4 inline-flex text-white bg-emerald-600 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-700 hover:text-white rounded text-lg"
               download
             >
@@ -49,7 +50,7 @@ export default function About() {
           <img
             className="object-cover object-center rounded-full border-solid border-2 border-indigo-300 shadow-2xl"
             alt="hero"
-            src="public/assets/Photo.jpg"
+            src={ProfileImg}
           />
         </div>
         
