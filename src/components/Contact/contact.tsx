@@ -1,20 +1,23 @@
 import React from "react";
 import { contactOptions } from "../../data";
+interface formData {
+  [key: string]: string
+}
 export default function Contact() {
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [message, setMessage] = React.useState("");
+  const [name, setName] = React.useState<string>("");
+  const [email, setEmail] = React.useState<string>("");
+  const [message, setMessage] = React.useState<string>("");
 
-  function encode(data) {
-    return Object.keys(data)
+  function encode(data:formData) {
+    return Object.keys(data )
       .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+        (key:string) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
       )
       .join("&");
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -40,11 +43,11 @@ export default function Contact() {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.39281044243!2d-74.24789170439271!3d4.648625932838915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses-419!2sco!4v1652570668513!5m2!1ses-419!2sco"
           />
           <div className="bg-indigo-700 relative flex flex-wrap py-6 rounded shadow-md">
-            <div className="lg:w-1/2 px-6">
+            <div className="lg:w-1/3 px-6">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                Contact
+                CONTACT
               </h2>
-              <div className="flex flex-wrap   max-w-sm">
+              <div className="flex flex-wrap ">
                 {contactOptions.map((contactOption) => (
                   <a
                     key={contactOption.description}
@@ -55,7 +58,7 @@ export default function Contact() {
                     <img
                       src={contactOption.image}
                       alt="linkedin"
-                      className="w-8 h-6 ml-1 cursor-pointer"
+                      className="w-10 h-8 ml-1 cursor-pointer md:w-12 md:h-10"
                     />
                   </a>
                 ))}
@@ -76,7 +79,7 @@ export default function Contact() {
           </div>
         </div>
         <form
-          netlify
+          data-netlify="true"
           name="contact"
           onSubmit={handleSubmit}
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
