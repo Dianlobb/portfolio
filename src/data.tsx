@@ -1,4 +1,18 @@
-export const skills = [
+export interface project {
+  title: string;
+  subtitle: string;
+  description: string;
+  image: string;
+  link: string;
+}
+
+export interface contactOptions {
+  description: string;
+  image: string;
+  link: string;
+}
+
+export const skills= [
   "VueJs",
   "ReactJS",
   "NodeJs",
@@ -13,7 +27,7 @@ export const skills = [
   "Sass",
 ];
 
-export const projects = [
+export const projects:project[]  = [
   {
     title: "Netflix-Clone VueJs",
     subtitle: "VueJs-Firebase",
@@ -32,7 +46,7 @@ export const projects = [
   },
 ];
 
-export const contactOptions = [
+export const contactOptions:contactOptions[] = [
   {
     description: "linkedin",
     image: "public/assets/linkedin.png",
