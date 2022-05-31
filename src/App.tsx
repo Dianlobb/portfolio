@@ -1,9 +1,14 @@
 import { useState } from 'react'
-import About from './components/About'
-import Contact from './components/contact'
-import Navbar from './components/Navbar'
-import Projects from './components/Projects'
-import Skills from './components/Skills'
+import React from "react";
+
+
+
+
+const About = React.lazy(() => import('./components/About'));
+const Contact = React.lazy(() => import('./components/contact'));
+const Navbar = React.lazy(() => import('./components/Navbar'));
+const Projects = React.lazy(() => import('./components/Projects'));
+const Skills = React.lazy(() => import('./components/Skills'));
 
 
 import './App.css'
