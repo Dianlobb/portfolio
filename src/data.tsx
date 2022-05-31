@@ -47,8 +47,8 @@ export const projects:project[]  = [
     subtitle: "React-Tailwind-Sanity",
     description:
       "This project is a responsive clone of twiter conect on the back with Sanity",
-    image: "./project-2.gif",
-    link: "https://reedbarger.com",
+    image: "./twitter-clone.gif",
+    link: "https://twitter-clone-dianlobb.vercel.app",
   },
 ];
 
