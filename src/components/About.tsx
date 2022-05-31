@@ -1,4 +1,4 @@
-import React from "react";
+
 import { ArrowCircleDownIcon } from "@heroicons/react/solid";
 import ProfileImg from "../img/Photo.jpg"
 
@@ -51,6 +51,7 @@ export default function About() {
             className="object-cover object-center rounded-full border-solid border-2 border-indigo-300 shadow-2xl"
             alt="hero"
             src={ProfileImg}
+            
           />
         </div>
         

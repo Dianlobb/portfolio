@@ -1,5 +1,5 @@
 import { CodeIcon } from "@heroicons/react/solid";
-import React from "react";
+
 import { projects } from "../data";
 
 export default function Projects() {
@@ -11,17 +11,17 @@ export default function Projects() {
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
             Apps I've Built
           </h1>
-
         </div>
         <div className="flex flex-wrap -m-4">
           {projects.map((project) => (
             <a
               href={project.link}
               key={project.image}
-              className="sm:w-1/2 w-100 p-4">
+              className="sm:w-1/2 w-100 p-4"
+            >
               <div className="flex relative">
-                
                 <img
+                  loading="lazy"
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
                   src={project.image}
@@ -34,7 +34,6 @@ export default function Projects() {
                     {project.title}
                   </h1>
                   <p className="leading-relaxed">{project.description}</p>
-                  
                 </div>
               </div>
             </a>

@@ -1,9 +1,7 @@
 import React from "react";
 import { contactOptions } from "../data";
 import Swal from "sweetalert";
-// import withReactContent from "sweetalert2-react-content";
 
-// const MySwal = withReactContent(Swal);
 interface formData {
   [key: string]: string;
 }
