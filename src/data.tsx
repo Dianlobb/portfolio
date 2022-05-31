@@ -1,4 +1,5 @@
 import netflixCloneImg from "./img/Netflix-clone.gif"
+import twitterCloneImg from "./img/twitter-clone.gif"
 import linkedinImg from "./img/linkedin.png"
 import twitterImg from "./img/twitter.png"
 import gitImg from "./img/git.png"
@@ -46,8 +47,8 @@ export const projects:project[]  = [
     title: "Twitter-Clone React",
     subtitle: "React-Tailwind-Sanity",
     description:
-      "This project is a responsive clone of twiter conect on the back with Sanity",
-    image: "./twitter-clone.gif",
+    "This project is a responsive clone of Twitter and is connected with next-auth for login, and allows creating tweets and comments with images.",
+    image: twitterCloneImg,
     link: "https://twitter-clone-dianlobb.vercel.app",
   },
 ];
