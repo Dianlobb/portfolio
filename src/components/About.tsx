@@ -1,14 +1,13 @@
-
 import { ArrowCircleDownIcon } from "@heroicons/react/solid";
-import ProfileImg from "../img/Photo.jpg"
+import ProfileImg from "../img/Photo.jpg";
 
 export default function About() {
   return (
-    <section id="about"   className="flex flex-col">
+    <section id="about" className="flex flex-col">
       <div className="container mx-auto flex px-10 md:flex-row flex-col items-center py-32">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="flex  title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Hi  <span className="animate-waving-hand">👋🏻</span>, I'm Diana.
+            Hi <span className="animate-waving-hand">👋🏻</span>, I'm Diana.
           </h1>
           <br className="hidden lg:inline-block" />
           <h3 className="title-font sm:text-2xl text-2xl mb-3 font-medium text-white">
@@ -49,18 +48,16 @@ export default function About() {
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
           <img
             className="object-cover object-center rounded-full border-solid border-2 border-indigo-300 shadow-2xl"
-            alt="hero"
+            alt="ProfileImg"
             src={ProfileImg}
-            
+            width="480"
+            height="480"
           />
         </div>
-        
       </div>
-      <a href="#skills" className="w-10 animate-bounce mb-4 self-center mb-10" >
-      <ArrowCircleDownIcon />
+      <a href="#skills" className="w-10 animate-bounce mb-4 self-center mb-10">
+        <ArrowCircleDownIcon />
       </a>
-    
-     
     </section>
   );
 }
