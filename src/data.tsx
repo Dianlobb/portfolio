@@ -11,12 +11,14 @@ export interface project {
   description: string;
   image: string;
   link: string;
+  gitlink:string;
 }
 
 export interface contactOptions {
   description: string;
   image: string;
   link: string;
+
 }
 
 export const skills= [
@@ -42,14 +44,16 @@ export const projects:project[]  = [
       "This project is a responsive clone of Netflix, is connected with firebase for login and register, and shows trailers from youtube as an iframe",
     image: netflixCloneImg,
     link: "https://netflix-clone-3a020.web.app/",
+    gitlink: "https://github.com/Dianlobb/TwitterClone",
   },
   {
     title: "Twitter-Clone React",
     subtitle: "React-Tailwind-Sanity",
     description:
-    "This project is a responsive clone of Twitter and is connected with next-auth for login, and allows creating tweets and comments with images.",
+    "Twitter-clone created with NextJS, connected with next-auth for login, allows creating tweets and comments with link images saved on sanity.",
     image: twitterCloneImg,
     link: "https://twitter-clone-dianlobb.vercel.app",
+    gitlink: "https://github.com/Dianlobb/netflixClone-vue",
   },
 ];
 
