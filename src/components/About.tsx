@@ -1,6 +1,7 @@
 import { ArrowCircleDownIcon } from "@heroicons/react/solid";
 import ProfileImg from "../img/Photo.jpg";
 
+
 export default function About() {
   return (
     <section id="about" className="flex flex-col">
@@ -37,7 +38,7 @@ export default function About() {
               Contact Me
             </a>
             <a
-              href="./img/DianaLoboaCV.pdf"
+              href="./src/img/DianaLoboaCV.pdf"
               className="ml-4 inline-flex text-white bg-emerald-600 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-700 hover:text-white rounded text-lg"
               download
             >
