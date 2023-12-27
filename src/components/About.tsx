@@ -1,10 +1,11 @@
 import { ArrowCircleDownIcon } from "@heroicons/react/solid";
 import ProfileImg from "../img/Photo.jpg";
+import curriculumVitae from '../static/DianaLoboaCV.pdf';
 
 
 export default function About() {
   const onButtonClick = () => {
-    const pdfUrl = "./src/static/DianaLoboaCV.pdf";
+    const pdfUrl = curriculumVitae;
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "DianaLoboaCV.pdf"; 
