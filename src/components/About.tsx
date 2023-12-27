@@ -3,6 +3,15 @@ import ProfileImg from "../img/Photo.jpg";
 
 
 export default function About() {
+  const onButtonClick = () => {
+    const pdfUrl = "./src/static/DianaLoboaCV.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "DianaLoboaCV.pdf"; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
   return (
     <section id="about" className="flex flex-col">
       <div className="container mx-auto flex px-10 md:flex-row flex-col items-center py-32">
@@ -38,7 +47,7 @@ export default function About() {
               Contact Me
             </a>
             <a
-              href="./src/img/DianaLoboaCV.pdf"
+              onClick={onButtonClick}
               className="ml-4 inline-flex text-white bg-emerald-600 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-700 hover:text-white rounded text-lg"
               download
             >
