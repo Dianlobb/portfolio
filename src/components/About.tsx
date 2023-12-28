@@ -1,18 +1,17 @@
 import { ArrowCircleDownIcon } from "@heroicons/react/solid";
 import ProfileImg from "../img/Photo.jpg";
-import curriculumVitae from '../static/DianaLoboaCV.pdf';
-
+import curriculumVitae from "../static/DianaLoboaCV.pdf";
 
 export default function About() {
   const onButtonClick = () => {
     const pdfUrl = curriculumVitae;
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "DianaLoboaCV.pdf"; 
+    link.download = "DianaLoboaCV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-};
+  };
   return (
     <section id="about" className="flex flex-col">
       <div className="container mx-auto flex px-10 md:flex-row flex-col items-center py-32">
@@ -25,14 +24,28 @@ export default function About() {
             I’m a full-stack Developer.
           </h3>
           <p className="mb-8 leading-relaxed font-semibold">
-            Developer and student, at the moment I work as a full-stack
-            developer with more than two years of experience developing dynamic
-            WebApps and corporate platforms. I'm passionate about learning and
-            sharing new things related to programming and new technologies with
-            the aim of creating new tools that improve and optimize processes.
+            I am a full-stack developer with more than 5 years of experience in
+            the industry. My expertise lies in building dynamic and innovative
+            web solutions using cutting-edge technologies such as Django and
+            Laravel, as well as programming languages such as PHP, Javascript,
+            and Python. In my current role as a back-end developer, I have
+            gained experience in AWS to deliver robust and reliable solutions.
+            <br /><br />
+            I also have experience with popular frameworks such as VueJs and
+            NodeJS. My knowledge of database management, allows me to
+            troubleshoot and solve technical challenges effectively.
+            <br /><br />
+            I have a strong desire to learn and share my knowledge of
+            programming and new technologies. I am dedicated to helping solve
+            problems and improve processes for others. Throughout my career, I
+            have had the opportunity to work on different scalable, concurrent,
+            and secure software development projects, which has led me to learn
+            every day about cost-efficient technologies, optimal integrations,
+            and flexible software.
             <br />
             <br />
-            With a big desire to continue learning.
+            In short, my skills and learning are focused on improving my
+            technical skills and perfecting what I have learned.
           </p>
           <div className="flex justify-center">
             <a
@@ -61,8 +74,8 @@ export default function About() {
             className="object-cover object-center rounded-full border-solid border-2 border-indigo-300 shadow-2xl"
             alt="ProfileImg"
             src={ProfileImg}
-            width="480"
-            height="480"
+            width="880"
+            height="880"
           />
         </div>
       </div>
