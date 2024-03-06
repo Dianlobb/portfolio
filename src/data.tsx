@@ -41,10 +41,10 @@ export const projects:project[]  = [
     title: "Netflix-Clone VueJs",
     subtitle: "VueJs-Firebase",
     description:
-      "This project is a responsive clone of Netflix, is connected with firebase for login and register, and shows trailers from youtube as an iframe",
+      "Responsive clone of Netflix, is connected with firebase for login. To loging use user: test@test.com and  Pass: Test1234     ",
     image: netflixCloneImg,
     link: "https://vue-side-project-dianlobb.web.app",
-    gitlink: "https://github.com/Dianlobb/TwitterClone",
+    gitlink: "https://github.com/Dianlobb/netflixClone-vue",
   },
   {
     title: "Twitter-Clone React",
@@ -53,7 +53,7 @@ export const projects:project[]  = [
     "Twitter-clone created with NextJS, connected with next-auth for login, allows creating tweets and comments with link images saved on sanity.",
     image: twitterCloneImg,
     link: "https://twitter-clone-dianlobb.vercel.app",
-    gitlink: "https://github.com/Dianlobb/netflixClone-vue",
+    gitlink: "https://github.com/Dianlobb/TwitterClone",
   },
 ];
 
@@ -62,11 +62,6 @@ export const contactOptions:contactOptions[] = [
     description: "linkedin",
     image: linkedinImg,
     link: "https://www.linkedin.com/in/dianlobb",
-  },
-  {
-    description: "twitter",
-    image: twitterImg,
-    link: "https://twitter.com/dianlobbTravel",
   },
   {
     description: "Git",
