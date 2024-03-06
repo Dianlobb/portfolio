@@ -28,8 +28,8 @@ export default function Contact() {
     })
       .then(() => {
         Swal({
-          title: 'Message sent!',
-          text: 'Thanks for your contact',
+          title: "Message sent!",
+          text: "Thanks for your contact",
           icon: "success",
         });
         setName("");
@@ -42,7 +42,7 @@ export default function Contact() {
   return (
     <section id="contact" className="relative">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="lg:w-2/3 md:w-1/2 bg-indigo-700 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+        <div className="lg:w-2/3 md:w-1/2 bg-violet-800 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
             width="100%"
             height="100%"
@@ -54,7 +54,7 @@ export default function Contact() {
             style={{ filter: "opacity(0.7)" }}
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.39281044243!2d-74.24789170439271!3d4.648625932838915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses-419!2sco!4v1652570668513!5m2!1ses-419!2sco"
           />
-          <div className="bg-indigo-700 relative flex flex-wrap py-6 rounded shadow-md">
+          <div className="bg-violet-800 relative flex flex-wrap py-6 rounded shadow-md">
             <div className="lg:w-1/3 px-6">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 CONTACT
@@ -101,7 +101,7 @@ export default function Contact() {
           </h2>
 
           <div className="relative mb-4">
-            <label htmlFor="name" className="leading-7 text-sm text-gray-400">
+            <label htmlFor="name" className="leading-7 text-sm text-gray-300">
               Name
             </label>
             <input
@@ -114,7 +114,7 @@ export default function Contact() {
             />
           </div>
           <div className="relative mb-4">
-            <label htmlFor="email" className="leading-7 text-sm text-gray-400">
+            <label htmlFor="email" className="leading-7 text-sm text-gray-300">
               Email
             </label>
             <input
@@ -129,7 +129,7 @@ export default function Contact() {
           <div className="relative mb-4">
             <label
               htmlFor="message"
-              className="leading-7 text-sm text-gray-400"
+              className="leading-7 text-sm text-gray-300"
             >
               Message
             </label>
