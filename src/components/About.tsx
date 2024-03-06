@@ -21,42 +21,30 @@ export default function About() {
           </h1>
           <br className="hidden lg:inline-block" />
           <h3 className="title-font sm:text-2xl text-2xl mb-3 font-medium text-white">
-            I’m a full-stack Developer.
+            I’m a traveler and  Developer.
           </h3>
           <p className="mb-8 leading-relaxed font-semibold">
-            I am a full-stack developer with more than 5 years of experience in
-            the industry. My expertise lies in building dynamic and innovative
-            web solutions using cutting-edge technologies such as Django and
-            Laravel, as well as programming languages such as PHP, Javascript,
-            and Python. In my current role as a back-end developer, I have
-            gained experience in AWS to deliver robust and reliable solutions.
-            <br /><br />
-            I also have experience with popular frameworks such as VueJs and
-            NodeJS. My knowledge of database management, allows me to
-            troubleshoot and solve technical challenges effectively.
-            <br /><br />
-            I have a strong desire to learn and share my knowledge of
-            programming and new technologies. I am dedicated to helping solve
-            problems and improve processes for others. Throughout my career, I
-            have had the opportunity to work on different scalable, concurrent,
-            and secure software development projects, which has led me to learn
-            every day about cost-efficient technologies, optimal integrations,
-            and flexible software.
+            
             <br />
             <br />
-            In short, my skills and learning are focused on improving my
-            technical skills and perfecting what I have learned.
+              Experienced full-stack developer with 5+ years in
+              Django, Laravel, VueJs, NodeJS, PHP, JavaScript, and Python. 
+              Skilled in database management and troubleshooting. 
+              Passionate about learning, collaboration, and creating efficient, scalable software.
+            <br />
+            <br />
+
           </p>
           <div className="flex justify-center">
             <a
               href="#projects"
               className="inline-flex text-white bg-emerald-600 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-700 rounded text-lg"
             >
-              See My latest Work
+              My Work
             </a>
             <a
               href="#contact"
-              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
+              className="ml-4 inline-flex text-gray-300 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
             >
               Contact Me
             </a>
