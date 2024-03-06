@@ -23,17 +23,17 @@ export interface contactOptions {
 
 export const skills= [
   "VueJs",
-  "ReactJS",
+  "Laravel",
   "NodeJs",
   "Django",
+  "ReactJS",
   "SQL",
-  "Git",
   "Python",
-  ".Net",
+  "php",
   "JavaScript (ES6+)",
   "TypeScript",
-  "Tailwind",
-  "Sass",
+  "Terraform",
+  "AWS",
 ];
 
 export const projects:project[]  = [
@@ -43,7 +43,7 @@ export const projects:project[]  = [
     description:
       "This project is a responsive clone of Netflix, is connected with firebase for login and register, and shows trailers from youtube as an iframe",
     image: netflixCloneImg,
-    link: "https://netflix-clone-3a020.web.app/",
+    link: "https://netflix-clone-3a020.firebaseapp.com/#/",
     gitlink: "https://github.com/Dianlobb/TwitterClone",
   },
   {
