@@ -43,7 +43,7 @@ export const projects:project[]  = [
     description:
       "This project is a responsive clone of Netflix, is connected with firebase for login and register, and shows trailers from youtube as an iframe",
     image: netflixCloneImg,
-    link: "https://netflix-clone-3a020.firebaseapp.com/#/",
+    link: "https://vue-side-project-dianlobb.web.app",
     gitlink: "https://github.com/Dianlobb/TwitterClone",
   },
   {
